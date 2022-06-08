@@ -41,7 +41,7 @@ header {
 
 h1 {
     font-family: 'Bungee', cursive;
-    font-size: 100px;
+    font-size: 75px;
     text-align: center;
     background: #121FCF;
     background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
@@ -49,8 +49,7 @@ h1 {
     -webkit-text-fill-color: transparent;
     margin: 0;
     padding: 0;
-    display: block;
-    height: 150px;
+    /* height: 130px; */
 }
 
 h2 {
@@ -71,13 +70,22 @@ main h3{
 
 .nav__header{
     display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    color: azure;
+    background-color: rgb(255, 255, 255);
+    /* display: flex;
     gap: 3rem;
     font-size: 30px ;
     color: azure;
     background-color: rgb(255, 255, 255);
     padding: 10px;
-    border: solid #a7aff5;
-    
+    border: 2px solid #000000;  
+    width: auto;   */
+}
+
+header nav{
+    width: 100%;
 }
 
 .nav__header li:hover{
@@ -294,6 +302,10 @@ h3:hover {
 }
 
 
+.navHeadertest{
+    background: black;
+}
+
 @media screen and (max-width: 1200px) {
     .conteinerOk{
         grid-template-columns: 1fr 1fr;
@@ -306,6 +318,10 @@ h3:hover {
 
 .oferta{
     grid-template-columns: repeat(2, 1fr);
+   }
+
+   .nav__header {
+       font-size: 20px;
    }
 
 }
@@ -330,6 +346,24 @@ h3:hover {
     footer a p{
         display: inline-flex;
     }
+
+    h1{
+        font-size: 50px;
+    }
 }
 
+@media screen and (max-width: 1480px) {
+    h1{
+        font-size: 60px;
+        margin-right: 10px;
+    }    
+
+}
+
+@media screen and (max-width: 1080px) {
+    header nav{
+        width: 100%;
+    }    
+
+}
  
