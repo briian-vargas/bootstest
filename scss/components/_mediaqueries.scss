@@ -1,0 +1,60 @@
+@media screen and (max-width: 1200px) {
+    .conteinerOk{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+               "header header"
+               "aside main"
+               "article article" 
+               "footer footer";    
+}
+
+.oferta{
+    grid-template-columns: repeat(2, 1fr);
+   }
+
+   .nav__header {
+       font-size: 20px;
+   }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .conteinerOk{
+     grid-template-columns: 1fr;    
+     grid-template-areas: 
+            "header"
+            "aside"
+            "main"
+            "article"
+            "footer";
+     } 
+
+     .oferta{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    footer a p{
+        display: inline-flex;
+    }
+
+    h1{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 1480px) {
+    h1{
+        font-size: 60px;
+        margin-right: 10px;
+    }    
+
+}
+
+@media screen and (max-width: 1080px) {
+    header nav{
+        width: 100%;
+    }    
+
+}
