@@ -13,9 +13,9 @@ body {
 .conteinerOk {
   display: grid;
   height: 100vh;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  grid-template-areas: "header header header" "aside main main " "article article article" "footer footer footer ";
+  grid-template-areas: "header header header header" "aside main main main " "article article article article" "footer footer footer footer ";
   grid-gap: 20px; }
 
 header {
@@ -41,8 +41,7 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 0;
-  padding: 0;
-  /* height: 130px; */ }
+  padding: 0; }
 
 h2 {
   color: black;
@@ -52,25 +51,21 @@ h2 {
   margin: 5px;
   text-decoration: underline; }
 
-main h3 {
-  color: white;
-  display: flex;
-  justify-content: center; }
+main {
+  grid-area: main; }
+  main main h2 {
+    text-align: center; }
+  main main h3 {
+    color: white;
+    display: flex;
+    justify-content: center; }
 
 .nav__header {
   display: flex;
   justify-content: space-between;
   font-size: 30px;
   color: azure;
-  background-color: white;
-  /* display: flex;
-    gap: 3rem;
-    font-size: 30px ;
-    color: azure;
-    background-color: rgb(255, 255, 255);
-    padding: 10px;
-    border: 2px solid #000000;  
-    width: auto;   */ }
+  background-color: white; }
 
 header nav {
   width: 100%; }
@@ -81,15 +76,6 @@ header nav {
 ul {
   list-style: none; }
 
-/* .container{
-    display: grid; 
-    grid-template-areas: "aside main"
-                         "aside  main"
-                         "aside  main";
-    grid-template-columns: auto;
-    gap: 100px;
-    
-}            */
 aside {
   grid-area: aside;
   margin: 10px;
@@ -99,11 +85,8 @@ aside {
   justify-content: space-around;
   text-align: justify; }
 
-main {
-  grid-area: main; }
-
-main h2 {
-  text-align: center; }
+.nosotros {
+  margin: 5%; }
 
 footer {
   grid-area: footer;
@@ -115,10 +98,9 @@ footer {
 
 footer a p {
   display: none; }
-
-footer a:hover {
-  transform: rotate(360deg);
-  transition: all 2s; }
+  footer a p :hover {
+    transform: rotate(360deg);
+    transition: all 2s; }
 
 footer ul {
   display: flex;
@@ -158,24 +140,20 @@ footer ul :hover {
   border: 1px solid black;
   border-radius: 10px; }
 
-.bordeImg {
-  width: 100%;
-  height: auto; }
-
 .derechosRes {
   padding: .5rem;
   font-size: 20px;
   color: lighthen(black, 100%);
   font-family: 'Tapestry', cursive;
-  text-align: center;
-  /* display: flex;
-    justify-content: center; */ }
+  text-align: center; }
 
 a {
   text-decoration: none; }
 
-img {
-  max-width: 300px; }
+.imgCarr {
+  width: 100%; }
+  .imgCarr .imgProd {
+    width: 100%; }
 
 i {
   color: #01f101;
